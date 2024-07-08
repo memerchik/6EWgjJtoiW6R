@@ -17,6 +17,11 @@ jupyter:
 # Navigating the Radio Archive: Segmentation and analysis of Swedish broadcasting data
 <!-- #endregion -->
 
+<!-- #region tags=["contributor"] -->
+### Johan Malmstedt [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5207-4296)
+Umeå University
+<!-- #endregion -->
+
 <!-- #region tags=["copyright"] -->
 [![cc-by-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
 ©<AUTHOR or ORGANIZATION / FUNDER>. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)
@@ -61,7 +66,7 @@ Though valuable both from the perspective of radio history in particular and fro
 The impact of such structural reorganization in broadcasting remains a contentious topic. On one hand, there is a belief that these changes should not disrupt the economically independent institution of PSB. On the other hand, the funding agreement for (SR) emphasizes the importance of maintaining a public audience. A significant loss of listeners to commercial alternatives could jeopardize the stability of PSB. Consequently, the issue of audience appeal is increasingly viewed through the prism of commercial competition. This shift necessitates a reevaluation of PSB’s style, as it's not just the existence of SR at stake, but also key considerations in media studies. The critical analysis of commercial radio, a recurring theme in critical radio studies, is well-articulated by scholars like Wolfgang Hagen and David Hendy (!Hagen, 2013, Hendy, 2003). While my work does not dispute their critiques of the monotonous and unoriginal output of American commercial broadcasting, it’s worth noting that these arguments often presuppose the existence of ‘non-commercial radio’. As these discussions extend beyond economic and organizational structures to include the 'programming of self-identity', it becomes crucial to examine a case like Sweden’s to identify distinctive traits of non-commercial broadcasting.
 
 
-# Audio data and historiography
+## Audio data and historiography
 
 
 Audio data is not inherently narrative or discursive, though they often come to be perceived as such through various transformative processes, including sonification, visualization, and the use of machine learning algorithms for speech-to-text conversion. Fundamentally, audio data consist of sonically oriented, time-discrete values that represent acoustic information. This notion has been the subject of much scholarly debate, highlighting its paradoxical nature. Prominent figures like radio scholar Wolfgang Hagen and media archaeologist Wolfgang Ernst have delved into the epistemological complexities surrounding audio data. Ernst, in particular, has elucidated how audio files are fundamentally non-sonic in their dormant state, being mere numerical entities that become interpretable to humans only through signal processing (<cite data-cite="14492245/5TD4MJSB"></cite>). We are, therefore, engaging with ephemeral representations that can be perceived in unconventional ways, such as lists, three-dimensional shapes, and points in Euclidean space. To delve deeper into this concept, let's consider the application of the audio processing library Librosa and examine a test file:
@@ -327,7 +332,7 @@ On this rather granular scale, it becomes apparent that the method bundles toget
 This description summarizes the method of preprocessing the audio in the following study. I hope to have demonstrated the value of lingering upon this initial step of the analysis. Preprocessing might sound arbitrary, but these decisions set the frame for the very analysis ahead. And in regard to historical radio data, there really are no predefined standards. As noted, many of the choices border on the arbitrary, serving only the function of providing an effective threshold for this particular material. I therefore also encourage the reader to access the hermeneutics layer and explore the settings, and the different results they generate. The approach suggested here is intended to be easily replicable, with the aim of further improvement and updating (<cite data-cite="14492245/IGEQZCQQ"></cite>).
 
 
-# The sample set and its historical significance
+## The sample set and its historical significance
 
 
 As the attentive listener might have noticed, the sample sound inspected above is in fact not Swedish radio, despite this being the topic of the historical analysis. As mentioned, the reason for this is a strict legal interpretation that prohibits the spread of these files. The old American samples have served as a means to grant better understanding of the method and algorithms in use. Beyond this point, however, the analysis will deal with data that is protected. Therefore, the files only contain relevant acoustic data extracted from the actual files. The legally restricted status of the data has also affected my access, limiting the sample size used in the study. In order to analyze the data, physical presence at the archive or streaming have been the only options. Since both analysis and testing are time-consuming, this limits the sample size. Direct access to the files would have allowed for a far more comprehensive study. The methods applied would nevertheless be valid for much larger data collections. Nevertheless, the results can still provide interesting indications.
@@ -345,7 +350,7 @@ df = pd.read_csv("https://github.com/jdh-observer/6EWgjJtoiW6R/raw/main/script/a
 df
 ```
 
-# Analysis 
+## Analysis
 
 
 Through the method outlined in the previous sections, the extensive audio data from each yearly set can be condensed into a collection of sample blocks. As demonstrated earlier, the audio has been analyzed for breaks in similarity sequences, from which 3-second-long samples have been extracted. Due to legal restrictions, I have extracted the MFCC values in advance. The result presents the most significant sonic sequences within the data. Notably, there is a slight shift in the number of detected occurrences for each year. Where the algorithm detected 1433 objects in the sample data from P3 in 1988, only 1030 were found a decade later. The decision has been made to keep these statistical variations, as they reflect the overall structure of the broadcasting. However, this slight imbalance should be kept in mind as we explore the distribution between the years. To better understand the nature of these sonic features, we can begin by mapping their internal relationship using complexity reduction techniques and plotting them in Euclidean space.
@@ -658,7 +663,7 @@ There are also specific historical indications that support this reading. It can
 This might have influenced broadcasting production. In the first place, it granted the question of entropy, variation, and unpredictability a renewed status in media production in Sweden. Secondly, because Swedish radio also had been evaluated and received a much lower score than television, it might have spurred producers in the direction of all sorts of diversity. To fully explore the correlation between these events is a matter I develop in my dissertation, and which far exceeds the scope of this text. Yet, I hope that the correlation between the global development in both object detection and dimension reduction might convince the reader that the tendency carries some value. And if so, we are also forced to consider the apparent brevity of this trend.
 
 
-# Summery
+## Summery
 
 
 This experiment has taken place on the threshold. On the threshold between listening and counting. On the threshold between differences in sound. Finally, it also plays out on the threshold to the scientifically valid. The sample sizes have been too small to actually confirm the findings on a solid base, despite strong indications. I hope that the reader still can see the value in the results. The analysis of audio data from annual sample sets reveals a shift in the number of detected occurrences for each year, with varying sonic sequences reflecting the overall structure of the broadcasting. Using PCA and UMAP, we observe differences in the MFCC data and clustering between P1 and P3, suggesting distinct sonic identities. There are several contextual factors related to the changes in the media environment that could be considered as a cause for this development, yet the exploration of causality lies beyond the confines of this article.  
