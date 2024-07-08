@@ -17,6 +17,11 @@ jupyter:
 # Navigating the Radio Archive: Segmentation and analysis of Swedish broadcasting data
 <!-- #endregion -->
 
+<!-- #region tags=["contributor"] -->
+### Johan Malmstedt [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5207-4296)
+Umeå University
+<!-- #endregion -->
+
 <!-- #region tags=["copyright"] -->
 [![cc-by-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
 ©<AUTHOR or ORGANIZATION / FUNDER>. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/)
