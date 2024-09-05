@@ -1,4 +1,4 @@
-# Mapping radio: Variations on segmentation and analysis of Swedish broadcasting data
+# Navigating the Radio Archive: Segmentation and analysis of Swedish broadcasting data
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jdh-observer/6EWgjJtoiW6R/main?filepath=article.ipynb)
 
