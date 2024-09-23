@@ -624,7 +624,7 @@ def print_intra_cluster_distances(result, audio_file_info, subfolder_names, meth
     for subfolder_name, avg_distance in subfolder_avg_distances.items():
         print(f"{subfolder_name}: {avg_distance:.2f}")
 
-selected_subfolders = ['P3 88', 'P3 91', 'P3 94', 'P3 98']
+selected_subfolders = ['P3 88', 'P3 91', 'P3 94', 'P3 98', 'P1 88', 'P1 91', 'P1 94', 'P1 98']
 pca_result, audio_file_info, subfolder_names = plot_from_csv(csv_file_url, title='PCA', selected_subfolders=selected_subfolders)
 print_intra_cluster_distances(pca_result, audio_file_info, subfolder_names, 'PCA')
 
