@@ -74,7 +74,6 @@ Audio data is not inherently narrative or discursive, though they often come to 
 
 
 ```python jdh={"module": "object", "object": {"source": ["Waveform"], "type": "image"}} tags=["hermeneutics", "narrative", "figure-waveform-*"]
-%matplotlib inline
 import matplotlib
 matplotlib.use('Agg')
 import requests
@@ -145,7 +144,6 @@ To explore the function of audio segmentation, we can initially test the predeve
 
 
 ```python jdh={"module": "object", "object": {"source": ["Waveform with onsets"], "type": "image"}} tags=["hermeneutics", "narrative", "figure-waveformonset-*"]
-%matplotlib inline
 def plot_waveform_with_onsets(mp3_url):
     response = requests.get(mp3_url, allow_redirects=True)
     response.raise_for_status()
@@ -474,7 +472,6 @@ Certain distinctions are also questionable in their detail. While a broad classi
 More importantly, however, the results reveal interesting discrepancies between the two approaches. Considering the variation of content types revealed by classification, it is clear that the dimension passes over certain distinctions within the sound. However, it is not that PCA is blind to differences – basing the distribution on MFCC values just allows for distinctions that are unfamiliar to more established cultural categories. Where a “chant” and a “mantra” may appear very distinct to the listener engaged in these activities, the sonic qualities are much less distinct than between two different mantras. Thus, the approach is limited in its grasp of cultural signification. However, in another sense, such a shift in perspective allows new ways of thinking about the sounds of radio. The method enables inquiry into the global sonic characteristics of the radio. From this perspective, it becomes all the more interesting to explore the data over time. In the following figures, P1 data is plotted over four sample years from the decade, respectively. To aid the visual estimation, the average pairwise distance value for each sample set is printed below.
 
 ```python tags=["hermeneutics", "narrative"]
-%matplotlib inline
 from sklearn.metrics import pairwise_distances
 import re
 
@@ -551,7 +548,6 @@ print_intra_cluster_distances(pca_result, audio_file_info, subfolder_names, 'PCA
 Upon initial examination, the results from P1 appear to contradict prevailing expectations. A notable concentration of spectral variation is observed up until 1991, prior to the advent of commercial radio. More intriguingly, the data from the subsequent year reveal a noteworthy increase in diversity. This finding is particularly significant as it seems to run counter to the stated objective of establishing a more pronounced identity for P1. Internal documents from 1993 emphasize the importance of aesthetic consistency in cultivating this identity, to the extent of standardizing the logos on microphones. Given this context, the apparent shift in the opposite direction within the sample data is quite striking. Before delving into possible interpretations of this trend, let us consider the P3 results.
 
 ```python tags=["hermeneutics", "narrative"]
-%matplotlib inline
 import re
 
 def custom_sort_key(name):
